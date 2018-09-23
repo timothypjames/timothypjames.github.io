@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>T.P.James</title>
+<!--        CSS-->
+        <link rel="stylesheet" href="styles/main.css">
+<!--        Mobile-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+<!--        favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ff4500">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            
+            <div class="text">
+                <div class="orange">
+                </div>
+                <h3>T.P.James.</h3><br>
+                <h3>Graphic Design<br>
+                Wellington, New Zealand <br>
+                <br>
+                (+64) 27 814 0736<br> 
+                <a class="anchor" href="mailto:timmyjames@gmail.com?Subject=Hello">timmyjames@gmail.com</a><br>
+                <br> 
+                <a class="anchor" href="https://www.instagram.com/t.p.james/" target="_blank">Instagram</a><br>
+                <a class="anchor" href="http://www.twitter.com/tpjames_"target="_blank">Twitter</a><br><br>    
+                2015&#8212;2018<br> 
+                Massey University<br>
+                Bachelor of Design with Honours<br>
+                Visual Communication
+                </h3>
+                
+            </div>
+            <div class="work"> 
+                <h3>Bazooka &#8212; a noisy word with Dutch roots.</h3>
+                <p class="half">A poster series exploring the loud history of the word 'Bazooka'.</p>
+                <img src="img/TJames_01.jpg">
+                <br>
+                <img src="img/TJames_02.jpg">
+                <br>
+                <img class="half" src="img/Ka-boom.jpg">
+                <br><br>
+                <h3>All fonts look the same.</h3>
+                <img src="img/a.gif" alt="a">
+                <br>
+                <img class="half" src="img/arrows.jpg" alt="Arrow Poster">
+                <br><br>
+                <h3>Typology.</h3>
+                <p class="half">A book on the classification of typefaces</p>
+                <img src="img/Intro.jpg" alt="Typology Cover">
+                <br><br>
+                <h3>Tesla.</h3>
+                
+                <img src="img/Comp-1.gif" alt="Tesla Ad">
+                <br><br>
+                <h3>Overload.</h3>
+                <img src="img/poster.jpg" alt="Overload Poster">
+                <br><br>
+            </div> 
+        </div>
+        <div class="footer">
+            <div id="clockbox" style="font:12px Helvetica; color:#000; font-weight: 600;"></div>
+                <script type="text/javascript">
+                    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                    function GetClock(){
+                        var d=new Date();
+                        var nday=d.getDay();
+                        var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+                        if(nhour==0){ap=" AM";nhour=12;}
+                        else if(nhour<12){ap=" AM";}
+                        else if(nhour==12){ap=" PM";}
+                        else if(nhour>12){ap=" PM";nhour-=12;}
+
+                        if(nmin<=9) nmin="0"+nmin;
+
+//                    if first half of second, hide colons by making them white
+                        if(d.getMilliseconds()<500){
+	                       var clocktext=""+tday[nday]+"&#8212;"+nhour+"<span style='color:fff'>:</span>"+nmin+ap+"";
+                        }
+//                    top half of second, display original line
+                        else{
+	                       var clocktext=""+tday[nday]+"&#8212;"+nhour+":"+nmin+ap+"";
+                        }
+
+                        document.getElementById('clockbox').innerHTML=clocktext;
+                    }
+
+                    GetClock();
+                    setInterval(GetClock,250);
+            </script>
+        </div>
+    </body>
+</html>
