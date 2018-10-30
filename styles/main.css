@@ -1,12 +1,31 @@
 body, html { 
   margin: 0;
-background-color: #fff;
+background-color: #F7F7F7;
     min-height: 100%;
     
 }
 
+@font-face {
+  font-family: 'Suisse Intl Mono';
+  src: url('fonts/SuisseIntlMonoThin/SuisseIntlMono-Thin-WebXL.eot'); /* IE9 Compat Modes */
+  src: url('fonts/SuisseIntlMonoThin/SuisseIntlMono-Thin-WebXL.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/SuisseIntlMonoThin/SuisseIntlMono-Thin-WebXL.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/SuisseIntlMonoThin/SuisseIntlMono-Thin-WebXL.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/SuisseIntlMonoThin/SuisseIntlMono-Thin-WebXL.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Suisse Intl';
+  src: url('fonts/SuisseIntl/SuisseIntl-Bold-WebXL.eot'); /* IE9 Compat Modes */
+  src: url('fonts/SuisseIntl/SuisseIntl-Bold-WebXL.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/SuisseIntl/SuisseIntl-Bold-WebXL.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/SuisseIntl/SuisseIntl-Bold-WebXL.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/SuisseIntl/SuisseIntl-Bold-WebXL.svg') format('svg'); /* Legacy iOS */
+    
+}
+
 h1 {
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Suisse Intl", sans-serif;
     font-size: 25px;
     font-weight: 600;
     letter-spacing: 0em;
@@ -16,8 +35,8 @@ h1 {
 }
 
 h2 {
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 4vw;
+    font-family: "Suisse Intl", sans-serif;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0em;
     line-height: 0.9em;
@@ -29,9 +48,8 @@ h2 {
 
 
 h3 {
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-weight: 600;
-    letter-spacing: 0em;
+    font-family: "Suisse Intl Mono", sans-serif;
+    letter-spacing: 0.03em;
     line-height: 1.1em;
     font-size: 14px;
     color: #000;
@@ -39,8 +57,9 @@ h3 {
 }
 
 
+
 p {
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Suisse Intl Mono", sans-serif;
     font-weight: 500;
     letter-spacing: 0em;
     line-height: 1.1em;
