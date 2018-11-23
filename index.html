@@ -170,11 +170,11 @@
 
 //                    if first half of second, hide colons by making them white
                         if(d.getMilliseconds()<500){
-	                       var clocktext=""+tday[nday]+".&thinsp;"+nhour+"<span style='visibility:hidden'>:</span>"+nmin+ap+"";
+	                       var clocktext=""+tday[nday]+" "+nhour+"<span style='visibility:hidden'>:</span>"+nmin+ap+"";
                         }
 //                    top half of second, display original line
                         else{
-	                       var clocktext=""+tday[nday]+".&thinsp;"+nhour+":"+nmin+ap+"";
+	                       var clocktext=""+tday[nday]+" "+nhour+":"+nmin+ap+"";
                         }
 
                         document.getElementById('clockbox').innerHTML=clocktext;

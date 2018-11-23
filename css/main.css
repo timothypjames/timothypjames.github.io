@@ -179,10 +179,12 @@ a:hover {
 }
 
 #clockbox{
-    font-family: 'Suisse Intl Mono';
+   font-family: "Suisse Intl Mono", monospace;
+    letter-spacing: 0em;
+    line-height: 1.1em;
     font-size: 10px;
-    font-weight: 600;
     color: #000;
+    margin: 0px;
     padding-right: 15px;
 }
 
